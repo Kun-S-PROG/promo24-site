@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/index.html", "permanent": true },
+    { "source": "/brands", "destination": "/brands/", "permanent": true },
+    { "source": "/industries", "destination": "/industries/", "permanent": true },
+    { "source": "/deliveries", "destination": "/deliveries/", "permanent": true },
+    { "source": "/warranty", "destination": "/warranty/", "permanent": true },
+    { "source": "/contacts", "destination": "/contacts/", "permanent": true }
+  ]
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108752926', 'ym');
+
+    ym(108752926, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/108752926" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Свяжитесь с Promo24: поставка промышленного оборудования. WhatsApp, Telegram, форма обратной связи.">
+  <title data-i18n="seo.contactsTitle">Promo24 — Контакты</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="contacts">
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <div class="logo-icon">P24</div>
+        Promo24
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="/" data-i18n="nav.home">Главная</a>
+        <a href="/brands/" data-i18n="nav.brands">Бренды</a>
+        <a href="/industries/" data-i18n="nav.industries">Отрасли</a>
+        <a href="/deliveries/" data-i18n="nav.deliveries">Поставки</a>
+        <a href="/warranty/" data-i18n="nav.warranty">Гарантия</a>
+        <a href="/contacts/" class="active" data-i18n="nav.contacts">Контакты</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="ru" onclick="switchLang('ru')">RU</button>
+          <button class="lang-btn" data-lang="kk" onclick="switchLang('kk')">KZ</button>
+          <button class="lang-btn" data-lang="uz" onclick="switchLang('uz')">UZ</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 data-i18n="contact.title">КОНТАКТЫ</h1>
+      <p data-i18n="contact.subtitle">Свяжитесь с нами удобным способом</p>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <h2 data-i18n="contact.subtitle">Свяжитесь с нами удобным способом</h2>
+          
+          <div class="contact-methods">
+            <a href="https://wa.me/8615359657695" target="_blank" class="contact-method">
+              <div class="contact-method-icon">💬</div>
+              <div>
+                <h4 data-i18n="contact.whatsapp">WhatsApp</h4>
+                <a href="https://wa.me/8615359657695" target="_blank">+86 153 5965 7695</a>
+              </div>
+            </a>
+            
+            <a href="https://t.me/+8615359657695" target="_blank" class="contact-method">
+              <div class="contact-method-icon">✈️</div>
+              <div>
+                <h4 data-i18n="contact.telegram">Telegram</h4>
+                <a href="https://t.me/+8615359657695" target="_blank">+86 153 5965 7695</a>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrapper">
+          <h3 data-i18n="contact.formTitle">Оставьте заявку</h3>
+          <form onsubmit="handleContactFormSubmit(event)">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.formFields.name">Имя</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="contact.formFields.name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <label for="company" data-i18n="contact.formFields.company">Компания</label>
+              <input type="text" id="company" name="company" data-i18n-placeholder="contact.formFields.company" placeholder="Компания">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone" data-i18n="contact.formFields.phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.formFields.phone" placeholder="Телефон" required>
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="contact.formFields.email">Email</label>
+                <input type="email" id="email" name="email" data-i18n-placeholder="contact.formFields.email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.formFields.message">Опишите вашу потребность</label>
+              <textarea id="message" name="message" data-i18n-placeholder="contact.formFields.message" placeholder="Опишите вашу потребность"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" data-i18n="contact.formFields.submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Promo24</h3>
+          <p data-i18n="footer.tagline">Надёжный поставщик промышленного оборудования в Россию и страны СНГ с доставкой от 7 дней.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.catalog">Каталог</h4>
+          <ul>
+            <li><a href="/brands/" data-i18n="nav.brands">Бренды</a></li>
+            <li><a href="/industries/" data-i18n="nav.industries">Отрасли</a></li>
+            <li><a href="/deliveries/" data-i18n="nav.deliveries">Поставки</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.info">Информация</h4>
+          <ul>
+            <li><a href="/warranty/" data-i18n="nav.warranty">Гарантия</a></li>
+            <li><a href="/contacts/" data-i18n="nav.contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://wa.me/8615359657695" target="_blank">WhatsApp</a></li>
+            <li><a href="https://t.me/+8615359657695" target="_blank">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">© 2025 Promo24. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/seo.js"></script>
+</body>
+</html>

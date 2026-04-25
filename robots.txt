@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://promo24-parts.com/sitemap.xml

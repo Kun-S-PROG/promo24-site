@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108752926', 'ym');
+
+    ym(108752926, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/108752926" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+     4|    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Гарантия на промышленное оборудование: новое 12 месяцев, восстановленное 3 месяца. Условия возврата и обмена.">
+  <title data-i18n="seo.warrantyTitle">Promo24 — Гарантия и условия</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#1A5276">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="warranty">
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <div class="logo-icon">P24</div>
+        Promo24
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="/" data-i18n="nav.home">Главная</a>
+        <a href="/brands/" data-i18n="nav.brands">Бренды</a>
+        <a href="/industries/" data-i18n="nav.industries">Отрасли</a>
+        <a href="/deliveries/" data-i18n="nav.deliveries">Поставки</a>
+        <a href="/warranty/" class="active" data-i18n="nav.warranty">Гарантия</a>
+        <a href="/contacts/" data-i18n="nav.contacts">Контакты</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="ru" onclick="switchLang('ru')">RU</button>
+          <button class="lang-btn" data-lang="kk" onclick="switchLang('kk')">KZ</button>
+          <button class="lang-btn" data-lang="uz" onclick="switchLang('uz')">UZ</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal" data-i18n="warranty.title">ГАРАНТИЯ И УСЛОВИЯ</h1>
+      <p class="reveal reveal-delay-1" data-i18n="warranty.subtitle">Мы гарантируем качество всей поставляемой продукции</p>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="warranty-grid" id="warrantyCards">
+        <!-- Dynamically rendered -->
+      </div>
+
+      <div class="warranty-notice">
+        <span class="notice-icon">⚠️</span>
+        <p data-i18n="warranty.notice">Мы не оказываем услуги по монтажу и ремонту на объекте</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="warranty-details">
+        <h3 data-i18n="warranty.detailsTitle">Условия возврата и обмена</h3>
+        <ul id="warrantyDetails">
+          <!-- Dynamically rendered -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title reveal" data-i18n="home.ctaTitle">Готовы получить предложение?</h2>
+      <p style="margin-bottom: 32px; font-size: 18px; opacity: 0.9;">&nbsp;</p>
+      <a href="/contacts/" class="btn btn-accent" data-i18n="home.ctaBtn">Связаться с нами</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Promo24</h3>
+          <p data-i18n="footer.tagline">Надёжный поставщик промышленного оборудования в Россию и страны СНГ с доставкой от 7 дней.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.catalog">Каталог</h4>
+          <ul>
+            <li><a href="/brands/" data-i18n="nav.brands">Бренды</a></li>
+            <li><a href="/industries/" data-i18n="nav.industries">Отрасли</a></li>
+            <li><a href="/deliveries/" data-i18n="nav.deliveries">Поставки</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.info">Информация</h4>
+          <ul>
+            <li><a href="/warranty/" data-i18n="nav.warranty">Гарантия</a></li>
+            <li><a href="/contacts/" data-i18n="nav.contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://wa.me/8615359657695" target="_blank">WhatsApp</a></li>
+            <li><a href="https://t.me/+861****7695" target="_blank">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">© 2025 Promo24. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/seo.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderWarranty();
+    });
+  </script>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Наверх">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M10 17V3M10 3L4 9M10 3L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Floating Social Buttons -->
+  <div class="floating-social">
+    <a href="https://wa.me/8615359657695" target="_blank" class="floating-btn whatsapp" title="WhatsApp">💬</a>
+    <a href="https://t.me/+861****7695" target="_blank" class="floating-btn telegram" title="Telegram">✈️</a>
+  </div>
+  <button class="back-to-top" aria-label="Наверх" title="Наверх">
+    <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+  </button>
+</body>
+</html>
